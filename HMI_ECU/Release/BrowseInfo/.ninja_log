@@ -1,0 +1,24 @@
+# ninja log v5
+97	306	7870180450000000	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/adc.xcl	8c117975660c48bf
+1	324	7870180450000000	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/keypad.xcl	bbecb621191f5d30
+91	398	7870180450000000	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/i2c_lcd.xcl	5df013ee0de3d327
+103	414	7870180450000000	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/startup_ewarm.xcl	bca893522524ee0
+109	432	7870180450000000	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/leds.xcl	af349a68c0f7357d
+118	451	7870180450000000	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/systick.xcl	fa8a9e78aa8b45f5
+124	468	7870180450000000	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/password.xcl	5b6d921c546dcd97
+130	485	7870180450000000	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/main.xcl	30251e6d06e53cb3
+317	503	7870180450000000	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/uart1.xcl	ad124f4225df32a2
+409	594	7870180458833091	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/keypad.pbi	8f1141b38908250e
+427	607	7870180458877823	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/i2c_lcd.pbi	ba82af7aef56fc9
+336	617	7870180458857845	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/adc.pbi	22f65546a7db6d1b
+446	682	7870180459313112	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/leds.pbi	41a956591482e722
+464	689	7870180459373129	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/systick.pbi	44bb1eb36dccf48e
+481	698	7870180459598602	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/password.pbi	ac4ac27b38f5137
+514	707	7870180459819160	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/uart1.pbi	11959a8fad6670c
+602	715	7870180459856150	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/startup_ewarm.pbi	b1e9a80991f48dd4
+498	731	7870180460205553	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/main.pbi	b07cb1608b340a45
+626	812	7870180461039756	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/HMI_ECU_part0.pbi	850c4385de64d234
+723	829	7870180461217078	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/HMI_ECU_part2.pbi	69148aec28a9193
+738	848	7870180461408943	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/HMI_ECU_part1.pbi	9da338e15f1283f0
+861	963	7870180462545986	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/HMI_ECU.pbd	5b3b73b9c7d63015
+974	2597	7870180478196177	D:/Fall2025/Intro ES/project/Door_Lock/HMI_ECU/Release/BrowseInfo/HMI_ECU.pbw	f92927e48c7172e9

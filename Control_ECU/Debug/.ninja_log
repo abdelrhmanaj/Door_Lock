@@ -1,0 +1,19 @@
+# ninja log v5
+2	116	7876162267860937	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/startup_ewarm.o	df7ff49e9e00b22d
+18	177	7877105291865364	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/HAL/buzzer.o	bb33159f48404815
+3	111	7876315716409950	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Exe/Control_ECU.out	98bb11f29e7a3e99
+2	177	7876089682232654	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/eeprom.o	32e6fac427d36d0c
+35	203	7875977667772020	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/motor.o	91c804a89a732494
+0	172	7876315710193648	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/main.o	a7f41e40ecf2ee9d
+12	193	7875977667709066	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/buzzer.o	27475a86db9dc59b
+9	161	7876162268440154	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/uart1.o	b5153ef9163b9a61
+1	238	7869047907466343	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/delay.o	3524e89be6994366
+2	126	7875979111651694	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/systick.o	3e34499972c24058
+14	190	7877105268946508	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/MCAL/systick.o	539fbf52e301baf3
+0	225	7877105269035360	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/MCAL/uart1.o	161905b4e9a821e7
+8	236	7877105269162272	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/MCAL/eeprom.o	fd8560b3ee4d7fd6
+30	205	7877105291982313	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/HAL/motor.o	c3c2ecd319cc7545
+1	151	7877105576404702	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/APP/main.o	376e02b302345000
+2	351	7877105590195784	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Exe/Control_ECU.out	d68b7ca10e2214a9
+1	165	7877105614843188	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Obj/APP/main.o	376e02b302345000
+2	71	7877105623731749	D:/Fall2025/Intro ES/project/Door_Lock/Control_ECU/Debug/Exe/Control_ECU.out	d68b7ca10e2214a9

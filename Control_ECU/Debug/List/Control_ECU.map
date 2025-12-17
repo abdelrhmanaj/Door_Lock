@@ -1,0 +1,273 @@
+###############################################################################
+#
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  17/Dec/2025  23:36:02
+# Copyright 2007-2021 IAR Systems AB.
+#
+#    Output file  =
+#        D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\Exe\Control_ECU.out
+#    Map file     =
+#        D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\List\Control_ECU.map
+#    Command line =
+#        -f "D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\Exe\Control_ECU.out.rsp"
+#        ("D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\Obj\HAL\buzzer.o"
+#        "D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\Obj\MCAL\eeprom.o"
+#        "D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\Obj\APP\main.o"
+#        "D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\Obj\HAL\motor.o"
+#        "D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\Obj\MCAL\systick.o"
+#        "D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\Obj\MCAL\uart1.o"
+#        --no_out_extension -o "D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\Exe\Control_ECU.out" --map
+#        "D:\Fall2025\Intro
+#        ES\project\Door_Lock\Control_ECU\Debug\List\Control_ECU.map" --config
+#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        9.0\arm\config\linker\TexasInstruments\TM4C123GH6.icf" --semihosting
+#        C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ewarm\Exe\driverlib.a
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3'ffff] { ro };
+define block CSTACK with size = 4K, alignment = 8 { };
+define block HEAP with size = 8K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'7fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0x40
+  .intvec            ro code          0x0    0x40  vector_table_M.o [6]
+                                   - 0x40    0x40
+
+"P1":                                       0x7c8
+  .text              ro code         0x40   0x214  eeprom.o [3]
+  .text              ro code        0x254   0x200  main.o [1]
+  .text              ro code        0x454    0x14  memset.o [6]
+  .text              ro code        0x468    0x60  systick.o [3]
+  .text              ro code        0x4c8    0xe8  uart1.o [3]
+  .text              ro code        0x5b0    0x90  motor.o [2]
+  .text              ro code        0x640    0x6c  buzzer.o [2]
+  .text              ro code        0x6ac    0x66  ABImemset.o [6]
+  .text              ro code        0x712    0x2a  copy_init3.o [6]
+  .text              ro code        0x73c    0x28  data_init.o [6]
+  .text              ro code        0x764    0x22  fpinit_M.o [5]
+  .iar.init_table    const          0x788    0x14  - Linker created -
+  .text              ro code        0x79c     0x2  vectortrap_M.o [6]
+  .text              ro code        0x7a0    0x1e  cmain.o [6]
+  .text              ro code        0x7be     0x4  low_level_init.o [4]
+  .text              ro code        0x7c2     0x4  exit.o [4]
+  .text              ro code        0x7c8     0xa  cexit.o [6]
+  .text              ro code        0x7d4    0x14  exit.o [7]
+  .text              ro code        0x7e8    0x1c  cstartup_M.o [6]
+  Initializer bytes  const          0x804     0x4  <for P2-1>
+  .rodata            const          0x808     0x0  copy_init3.o [6]
+                                  - 0x808   0x7c8
+
+"P2", part 1 of 2:                            0x4
+  P2-1                        0x2000'0000     0x2  <Init block>
+    .data            inited   0x2000'0000     0x1  main.o [1]
+    .bss             inited   0x2000'0001     0x1  systick.o [3]
+                            - 0x2000'0002     0x2
+
+"P2", part 2 of 2:                         0x1000
+  CSTACK                      0x2000'0008  0x1000  <Block>
+    CSTACK           uninit   0x2000'0008  0x1000  <Block tail>
+                            - 0x2000'1008  0x1000
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0x808     0x3'ffff  0x3'f7f8
+  0x2000'0004  0x2000'0007       0x4
+  0x2000'1008  0x2000'7fff    0x6ff8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x4 (200% of destination):
+                0x804   0x4
+    1 destination range, total size 0x2:
+          0x2000'0000   0x2
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code  ro data  rw data
+    ------            -------  -------  -------
+command line/config:
+    -------------------------------------------
+    Total:
+
+D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\Debug\Obj\APP: [1]
+    main.o                512        1        1
+    -------------------------------------------
+    Total:                512        1        1
+
+D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\Debug\Obj\HAL: [2]
+    buzzer.o              108
+    motor.o               144
+    -------------------------------------------
+    Total:                252
+
+D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\Debug\Obj\MCAL: [3]
+    eeprom.o              532
+    systick.o              96        1        1
+    uart1.o               232
+    -------------------------------------------
+    Total:                860        1        1
+
+dl7M_tln.a: [4]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------------------------
+    Total:                  8
+
+m7M_tls.a: [5]
+    fpinit_M.o             34
+    -------------------------------------------
+    Total:                 34
+
+rt7M_tl.a: [6]
+    ABImemset.o           102
+    cexit.o                10
+    cmain.o                30
+    copy_init3.o           42
+    cstartup_M.o           28
+    data_init.o            40
+    memset.o               20
+    vector_table_M.o       64
+    vectortrap_M.o          2
+    -------------------------------------------
+    Total:                338
+
+shb_l.a: [7]
+    exit.o                 20
+    -------------------------------------------
+    Total:                 20
+
+    Gaps                    6        2
+    Linker created                  22    4'096
+-----------------------------------------------
+    Grand Total:        2'030       26    4'098
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+.iar.init_table$$Base         0x788          --   Gb  - Linker created -
+.iar.init_table$$Limit        0x79c          --   Gb  - Linker created -
+?main                         0x7a1         Code  Gb  cmain.o [6]
+BusFault_Handler              0x79d         Code  Wk  vectortrap_M.o [6]
+Buzzer_Init                   0x641   0x3a  Code  Gb  buzzer.o [2]
+Buzzer_Off                    0x689    0xe  Code  Gb  buzzer.o [2]
+Buzzer_On                     0x67b    0xe  Code  Gb  buzzer.o [2]
+CSTACK$$Base            0x2000'0008          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'1008          --   Gb  - Linker created -
+DebugMon_Handler              0x79d         Code  Wk  vectortrap_M.o [6]
+DelayMs                       0x497   0x22  Code  Gb  systick.o [3]
+EEPROM_Init                    0x6d   0x68  Code  Gb  eeprom.o [3]
+EEPROM_ReadBuffer             0x1c9   0x8c  Code  Gb  eeprom.o [3]
+EEPROM_ReadWord                0xfb   0x24  Code  Gb  eeprom.o [3]
+EEPROM_WaitDone                0x41   0x2c  Code  Lc  eeprom.o [3]
+EEPROM_WriteBuffer            0x13d   0x8c  Code  Gb  eeprom.o [3]
+EEPROM_WriteWord               0xd5   0x26  Code  Gb  eeprom.o [3]
+HardFault_Handler             0x79d         Code  Wk  vectortrap_M.o [6]
+MemManage_Handler             0x79d         Code  Wk  vectortrap_M.o [6]
+Motor_Init                    0x5b1   0x3a  Code  Gb  motor.o [2]
+Motor_Left                    0x605   0x1a  Code  Gb  motor.o [2]
+Motor_Right                   0x5eb   0x1a  Code  Gb  motor.o [2]
+Motor_Stop                    0x61f    0xe  Code  Gb  motor.o [2]
+NMI_Handler                   0x79d         Code  Wk  vectortrap_M.o [6]
+PendSV_Handler                0x79d         Code  Wk  vectortrap_M.o [6]
+Region$$Table$$Base           0x788          --   Gb  - Linker created -
+Region$$Table$$Limit          0x79c          --   Gb  - Linker created -
+SVC_Handler                   0x79d         Code  Wk  vectortrap_M.o [6]
+SysTick_Handler               0x79d         Code  Wk  vectortrap_M.o [6]
+SysTick_Init                  0x469   0x2e  Code  Gb  systick.o [3]
+UART1_dataAvailable           0x567   0x12  Code  Gb  uart1.o [3]
+UART1_init                    0x4c9   0x7c  Code  Gb  uart1.o [3]
+UART1_receiveByte             0x557   0x10  Code  Gb  uart1.o [3]
+UART1_sendByte                0x545   0x12  Code  Gb  uart1.o [3]
+UsageFault_Handler            0x79d         Code  Wk  vectortrap_M.o [6]
+__aeabi_memset                0x6ad         Code  Gb  ABImemset.o [6]
+__cmain                       0x7a1         Code  Gb  cmain.o [6]
+__exit                        0x7d5   0x14  Code  Gb  exit.o [7]
+__iar_Memset                  0x6ad         Code  Gb  ABImemset.o [6]
+__iar_Memset_word             0x6b5         Code  Gb  ABImemset.o [6]
+__iar_copy_init3              0x713   0x2a  Code  Gb  copy_init3.o [6]
+__iar_data_init3              0x73d   0x28  Code  Gb  data_init.o [6]
+__iar_init_vfp                0x765         Code  Gb  fpinit_M.o [5]
+__iar_program_start           0x7e9         Code  Gb  cstartup_M.o [6]
+__low_level_init              0x7bf    0x4  Code  Gb  low_level_init.o [4]
+__vector_table                  0x0         Data  Gb  vector_table_M.o [6]
+_call_main                    0x7ad         Code  Gb  cmain.o [6]
+_exit                         0x7c9         Code  Gb  cexit.o [6]
+auto_lock_time          0x2000'0000    0x1  Data  Lc  main.o [1]
+check_password                0x27f   0x38  Code  Lc  main.o [1]
+exit                          0x7c3    0x4  Code  Gb  exit.o [4]
+interruptMode           0x2000'0001    0x1  Data  Lc  systick.o [3]
+main                          0x2b7  0x19a  Code  Gb  main.o [1]
+mark_password_saved           0x271    0xe  Code  Lc  main.o [1]
+memset                        0x455   0x14  Code  Gb  memset.o [6]
+password_exists               0x255   0x1c  Code  Lc  main.o [1]
+
+
+[1] = D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\Debug\Obj\APP
+[2] = D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\Debug\Obj\HAL
+[3] = D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\Debug\Obj\MCAL
+[4] = dl7M_tln.a
+[5] = m7M_tls.a
+[6] = rt7M_tl.a
+[7] = shb_l.a
+
+  2'030 bytes of readonly  code memory
+     26 bytes of readonly  data memory
+  4'098 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

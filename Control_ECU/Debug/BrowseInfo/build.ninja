@@ -1,0 +1,110 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\XclFileGenerator.exe $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\SourceIndexer.exe $flags
+
+rule MAKEBROWSE
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\makeBrowseData.exe $flags
+
+rule PDBLINK
+  command = C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\common\bin\PbdLink.exe $flags
+
+
+
+#Build steps
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\APP\main.c" -xcl_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.xcl" -macro_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\APP\main.c" -D PART_TM4C123GH6PM -o "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\Obj\APP" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\inc\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\APP\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\CORE\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\\" -On --predef_macros "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.tmp"
+  rspfile_name = D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.xcl.rsp
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\CORE\startup_ewarm.c" -xcl_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.xcl" -macro_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\CORE\startup_ewarm.c" -D PART_TM4C123GH6PM -o "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\Obj\CORE" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\inc\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\APP\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\CORE\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\\" -On --predef_macros "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.tmp"
+  rspfile_name = D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.xcl.rsp
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\buzzer.c" -xcl_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.xcl" -macro_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\buzzer.c" -D PART_TM4C123GH6PM -o "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\Obj\HAL" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\inc\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\APP\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\CORE\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\\" -On --predef_macros "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.tmp"
+  rspfile_name = D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.xcl.rsp
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\motor.c" -xcl_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.xcl" -macro_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\motor.c" -D PART_TM4C123GH6PM -o "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\Obj\HAL" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\inc\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\APP\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\CORE\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\\" -On --predef_macros "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.tmp"
+  rspfile_name = D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.xcl.rsp
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\eeprom.c" -xcl_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.xcl" -macro_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\eeprom.c" -D PART_TM4C123GH6PM -o "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\Obj\MCAL" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\inc\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\APP\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\CORE\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\\" -On --predef_macros "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.tmp"
+  rspfile_name = D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.xcl.rsp
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\systick.c" -xcl_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.xcl" -macro_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\systick.c" -D PART_TM4C123GH6PM -o "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\Obj\MCAL" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\inc\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\APP\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\CORE\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\\" -On --predef_macros "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.tmp"
+  rspfile_name = D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.xcl.rsp
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\uart1.c" -xcl_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.xcl" -macro_file "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\bin\iccarm.exe"
+  flags = "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\uart1.c" -D PART_TM4C123GH6PM -o "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\Obj\MCAL" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.0\arm\inc\c\DLib_Config_Normal.h" -I C$:\ti\TivaWare_C_Series-2.2.0.295\inc\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ -I C$:\ti\TivaWare_C_Series-2.2.0.295\ -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\APP\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\CORE\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\\" -I "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\\" -On --predef_macros "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.tmp"
+  rspfile_name = D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.xcl.rsp
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.pbi : INDEXER D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.xcl |  $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\APP\main.c
+  flags = "-out=D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.pbi" -f "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.xcl"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.pbi : INDEXER D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.xcl |  $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\CORE\startup_ewarm.c
+  flags = "-out=D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.pbi" -f "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.xcl"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.pbi : INDEXER D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.xcl |  $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\buzzer.c
+  flags = "-out=D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.pbi" -f "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.xcl"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.pbi : INDEXER D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.xcl |  $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\HAL\motor.c
+  flags = "-out=D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.pbi" -f "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.xcl"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.pbi : INDEXER D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.xcl |  $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\eeprom.c
+  flags = "-out=D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.pbi" -f "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.xcl"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.pbi : INDEXER D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.xcl |  $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\systick.c
+  flags = "-out=D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.pbi" -f "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.xcl"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.pbi : INDEXER D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.xcl |  $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\MACL\uart1.c
+  flags = "-out=D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.pbi" -f "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.xcl"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU.pbw : MAKEBROWSE D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU.pbd
+  flags = "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU.pbd" -output "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU.pbw"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part0.pbi : PDBLINK D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.pbi |  $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.pbi $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.pbi
+  flags = -M "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part0.pbi" "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.pbi" "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\CORE\startup_ewarm.pbi" "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\buzzer.pbi"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part1.pbi : PDBLINK D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.pbi |  $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.pbi $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.pbi
+  flags = -M "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part1.pbi" "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.pbi" "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.pbi" "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\systick.pbi"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part2.pbi : PDBLINK D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.pbi
+  flags = -M "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part2.pbi" "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.pbi"
+
+build D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU.pbd : PDBLINK D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part0.pbi |  $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part1.pbi $
+D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part2.pbi
+  flags = -M "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU.pbd" "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part0.pbi" "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part1.pbi" "D$:\Fall2025\Intro$ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\Control_ECU_part2.pbi"
+
