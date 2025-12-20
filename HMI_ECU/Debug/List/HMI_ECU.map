@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  17/Dec/2025  23:46:59
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  20/Dec/2025  19:32:40
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -71,7 +71,7 @@ initialize by copy { rw };
   .intvec            ro code          0x0    0x40  vector_table_M.o [7]
                                    - 0x40    0x40
 
-"P1":                                      0x1634
+"P1":                                      0x163c
   .text              ro code         0x40   0x4fd  xprintfsmall_nomb.o [5]
   .text              ro code        0x53e    0x2a  copy_init3.o [7]
   .text              ro code        0x568    0x16  strchr.o [7]
@@ -118,21 +118,21 @@ initialize by copy { rw };
   .rodata            const         0x15a4    0x10  main.o [1]
   .rodata            const         0x15b4    0x10  main.o [1]
   .rodata            const         0x15c4    0x10  main.o [1]
-  .rodata            const         0x15d4    0x10  password.o [2]
-  .rodata            const         0x15e4    0x10  password.o [2]
+  .rodata            const         0x15d4    0x10  main.o [1]
+  .rodata            const         0x15e4    0x10  main.o [1]
   .rodata            const         0x15f4    0x10  password.o [2]
   .rodata            const         0x1604    0x10  password.o [2]
-  .rodata            const         0x1614     0xc  main.o [1]
-  .rodata            const         0x1620     0xc  main.o [1]
-  .rodata            const         0x162c     0xc  main.o [1]
-  .rodata            const         0x1638     0xc  main.o [1]
-  .rodata            const         0x1644     0xc  main.o [1]
-  .rodata            const         0x1650     0xc  main.o [1]
-  .rodata            const         0x165c     0x8  main.o [1]
+  .rodata            const         0x1614    0x10  password.o [2]
+  .rodata            const         0x1624    0x10  password.o [2]
+  .rodata            const         0x1634     0xc  main.o [1]
+  .rodata            const         0x1640     0xc  main.o [1]
+  .rodata            const         0x164c     0xc  main.o [1]
+  .rodata            const         0x1658     0xc  main.o [1]
   .rodata            const         0x1664     0x8  main.o [1]
-  Initializer bytes  const         0x166c     0x8  <for P2-1>
-  .rodata            const         0x1674     0x0  copy_init3.o [7]
-                                 - 0x1674  0x1634
+  .rodata            const         0x166c     0x8  main.o [1]
+  Initializer bytes  const         0x1674     0x8  <for P2-1>
+  .rodata            const         0x167c     0x0  copy_init3.o [7]
+                                 - 0x167c  0x163c
 
 "P2", part 1 of 2:                            0x8
   P2-1                        0x2000'0000     0x7  <Init block>
@@ -151,7 +151,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-       0x1674     0x3'ffff  0x3'e98c
+       0x167c     0x3'ffff  0x3'e984
   0x2000'1008  0x2000'7fff    0x6ff8
 
 
@@ -163,7 +163,7 @@ Unused ranges:
           -------      ----
 Copy (__iar_copy_init3)
     1 source range, total size 0x8 (114% of destination):
-               0x166c   0x8
+               0x1674   0x8
     1 destination range, total size 0x7:
           0x2000'0000   0x7
 
@@ -212,9 +212,9 @@ command line/config:
     Total:
 
 D:\Fall2025\Intro ES\project\Door_Lock\HMI_ECU\Debug\Obj\APP: [1]
-    main.o                   1'088      268
+    main.o                   1'088      276
     ------------------------------------------------
-    Total:                   1'088      268
+    Total:                   1'088      276
 
 D:\Fall2025\Intro ES\project\Door_Lock\HMI_ECU\Debug\Obj\CORE: [2]
     password.o                 336      104
@@ -276,7 +276,7 @@ shb_l.a: [8]
     Gaps                        11        2
     Linker created                       21    4'096
 ----------------------------------------------------
-    Grand Total:             5'308      440    4'103
+    Grand Total:             5'308      448    4'103
 
 
 *******************************************************************************
@@ -383,7 +383,7 @@ strlen                        0x5d9         Code  Gb  strlen.o [7]
 [8] = shb_l.a
 
   5'308 bytes of readonly  code memory
-    440 bytes of readonly  data memory
+    448 bytes of readonly  data memory
   4'103 bytes of readwrite data memory
 
 Errors: none

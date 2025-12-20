@@ -1,16 +1,20 @@
 #include "tm4c123gh6pm.h"
-#include "Control_ECU/buzzer.h"
-#include "systick.h"
+#include "HMI_ECU/keypad.h"
 
-int main(void)
-{
-    SysTick_Init(16000, SYSTICK_NOINT);  // 1ms tick
-    Buzzer_Init();
 
-    Buzzer_On();
-    DelayMs(1000);    // 5 seconds
+void main(void){
+char key;
 
-    Buzzer_Off();
+   Keypad_Init();
 
-    while (1);
+   printf("Keypad test started\n");
+
+   while (1)
+   {
+       key = Keypad_GetKey();
+       if (key != 0)
+       {
+           printf("Pressed key: %c\n", key);
+       }
+   }
 }

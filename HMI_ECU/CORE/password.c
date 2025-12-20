@@ -1,3 +1,4 @@
+
 #include "password.h"
 #include "../HAL/keypad.h"
 #include "../HAL/i2c_lcd.h"
@@ -128,4 +129,3 @@ uint8_t verify_password(void)
        return 0;
     }
 }
-

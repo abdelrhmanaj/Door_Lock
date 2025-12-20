@@ -1,4 +1,4 @@
-"D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\MACL\eeprom.c"
+"D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\MCAL\eeprom.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
@@ -9,7 +9,7 @@ D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.
 -o
 D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\eeprom.pbi
 -I
-D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\MACL
+D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\MCAL
 -I
 C:\ti\TivaWare_C_Series-2.2.0.295\inc
 -I

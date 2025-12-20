@@ -1,14 +1,14 @@
 D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\APP\main.pbi: \
-  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP\..\MCAL\systick.h \
-  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP\..\HAL\buzzer.h \
-  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP\..\HAL\motor.h \
-  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP\..\MCAL\eeprom.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Normal.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
-  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
+  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP\main.c \
+  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP/../CORE/tm4c123gh6pm.h \
+  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP/../MCAL/uart1.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
-  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP\..\MCAL\uart1.h \
-  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP\..\CORE\tm4c123gh6pm.h \
-  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP\main.c
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Normal.h \
+  C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
+  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP/../MCAL/eeprom.h \
+  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP/../HAL/motor.h \
+  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP/../HAL/buzzer.h \
+  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\APP/../MCAL/systick.h

@@ -1,3 +1,4 @@
+
 #include "../CORE/tm4c123gh6pm.h"
 #include "../HAL/keypad.h"
 #include "../HAl/i2c_lcd.h"
@@ -15,18 +16,18 @@
 static char show_main_menu(void)
 {
     lcd_clear();
-    display_message("+ Open Door", 0, 0);
-    display_message("- Change PW", 1, 0);
+    display_message("F1 Open Door", 0, 0);
+    display_message("F2 Change PW", 1, 0);
     DelayMs(1200);
 
     lcd_clear();
-    display_message("* Set Timeout", 0, 0);
-    display_message("+ - * Select", 1, 0);
+    display_message("F3 Set Timeout", 0, 0);
+    display_message("F1 F2 F3 Select", 1, 0);
 
     while (1)
     {
         char k = Keypad_GetKey();
-        if (k == 'A' || k == 'B' || k == '*')
+        if (k == 'A' || k == 'B' || k == 'C')
             return k;
     }
 }
@@ -155,7 +156,7 @@ static void set_timeout(void)
         lcd_print_str(buf);
 
         char k = Keypad_GetKey();
-        if (k == '#')
+        if (k == 'D')
         {
             UART1_sendByte(CMD_SET_TIMEOUT);
             DelayMs(100);
@@ -246,7 +247,7 @@ int main(void)
             open_door();
         else if (option == 'B')
             change_password();
-        else if (option == '*')
+        else if (option == 'C')
             set_timeout();
     }
     

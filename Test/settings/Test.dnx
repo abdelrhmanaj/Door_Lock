@@ -46,7 +46,7 @@
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
     <LMIFTDIDriver>
-        <LMIFTDIserialNo>0E20835F</LMIFTDIserialNo>
+        <LMIFTDIserialNo>0E22D24C</LMIFTDIserialNo>
         <LMIFTDIfoundProbes />
     </LMIFTDIDriver>
     <Exceptions>
@@ -54,7 +54,7 @@
         <StopOnThrow>_ 0</StopOnThrow>
     </Exceptions>
     <DebugChecksum>
-        <Checksum>2345242213</Checksum>
+        <Checksum>2084560927</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>

@@ -1,4 +1,4 @@
 D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\HAL\motor.pbi: \
-  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\HAL\motor.c \
-  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\HAL/motor.h \
-  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\HAL/../CORE/tm4c123gh6pm.h
+  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\HAL\..\CORE\tm4c123gh6pm.h \
+  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\HAL\motor.h \
+  D:\Fall2025\Intro\ ES\project\Door_Lock\Control_ECU\HAL\motor.c

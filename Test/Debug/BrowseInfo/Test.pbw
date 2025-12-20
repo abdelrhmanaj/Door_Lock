@@ -96367,20 +96367,6 @@
     "scope": null
   },
   {
-    "ID": "c:@F@Buzzer_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Buzzer_Init(void)",
-    "location": {
-      "column": "6",
-      "line": "4",
-      "path": "D:\\Fall2025\\Intro ES\\project\\Door_Lock\\Test\\Control_ECU\\buzzer.h"
-    },
-    "name": "Buzzer_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:@F@Buzzer_On",
     "What": "Function",
     "defdec": "Dec",
@@ -96391,34 +96377,6 @@
       "path": "D:\\Fall2025\\Intro ES\\project\\Door_Lock\\Test\\Control_ECU\\buzzer.h"
     },
     "name": "Buzzer_On",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Buzzer_On",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Buzzer_On(void)",
-    "location": {
-      "column": "6",
-      "line": "5",
-      "path": "D:\\Fall2025\\Intro ES\\project\\Door_Lock\\Test\\Control_ECU\\buzzer.h"
-    },
-    "name": "Buzzer_On",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@Buzzer_Off",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void Buzzer_Off(void)",
-    "location": {
-      "column": "6",
-      "line": "6",
-      "path": "D:\\Fall2025\\Intro ES\\project\\Door_Lock\\Test\\Control_ECU\\buzzer.h"
-    },
-    "name": "Buzzer_Off",
     "origin": "user_include",
     "scope": null
   },
@@ -99338,13 +99296,27 @@
     "ID": "c:@F@main",
     "What": "Function",
     "defdec": "Def",
-    "display": "int main(void)",
+    "display": "void main(void)",
     "location": {
-      "column": "5",
+      "column": "6",
       "line": "5",
       "path": "D:\\Fall2025\\Intro ES\\project\\Door_Lock\\Test\\main.c"
     },
     "name": "main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:main.c@78@F@main@key",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "key",
+    "location": {
+      "column": "6",
+      "line": "6",
+      "path": "D:\\Fall2025\\Intro ES\\project\\Door_Lock\\Test\\main.c"
+    },
+    "name": "key",
     "origin": "project_file",
     "scope": null
   },

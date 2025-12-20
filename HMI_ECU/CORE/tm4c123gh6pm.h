@@ -2871,7 +2871,7 @@
 #define UART_LCRH_WLEN_5        0x00000000  // 5 bits (default)
 #define UART_LCRH_WLEN_6        0x00000020  // 6 bits
 #define UART_LCRH_WLEN_7        0x00000040  // 7 bits
-#define UART_LCRH_WLEN_8        0x00000060  // 8 bits
+#define UART_LCRH_WLEN_8        0x00000060  // 8 bits   0110 0000
 #define UART_LCRH_FEN           0x00000010  // UART Enable FIFOs
 #define UART_LCRH_STP2          0x00000008  // UART Two Stop Bits Select
 #define UART_LCRH_EPS           0x00000004  // UART Even Parity Select

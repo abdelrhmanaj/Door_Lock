@@ -1,146 +1,373 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>5</fileVersion>
-    <fileChecksum>1980681647</fileChecksum>
+    <fileChecksum>2574413498</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\eeprom.c</file>
             <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\massErase.h</file>
-            <file>$PROJ_DIR$\motor.c</file>
-            <file>$PROJ_DIR$\motor.h</file>
-            <file>$PROJ_DIR$\systick.c</file>
-            <file>$PROJ_DIR$\eeprom.h</file>
-            <file>$PROJ_DIR$\systick.h</file>
-            <file>$PROJ_DIR$\uart1.c</file>
-            <file>$PROJ_DIR$\uart1.h</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-            <file>$PROJ_DIR$\control_uart.c</file>
-            <file>$PROJ_DIR$\Debug\Exe\Control_ECU.out</file>
-            <file>$PROJ_DIR$\buzzer.h</file>
-            <file>$PROJ_DIR$\startup_ewarm.c</file>
-            <file>$PROJ_DIR$\tm4c123gh6pm.h</file>
-            <file>$PROJ_DIR$\buzzer.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\MCAL\uart1.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\MCAL\eeprom.o</file>
-            <file>C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\eeprom.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\MCAL\systick.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$PROJ_DIR$\control_main.c</file>
-            <file>$PROJ_DIR$\control_motor.c</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.o</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\control_motor.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>C:\ti\TivaWare_C_Series-2.2.0.295\inc\hw_types.h</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
-            <file>$PROJ_DIR$\delay.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
             <file>$PROJ_DIR$\Debug\Obj\uart1.o</file>
             <file>$PROJ_DIR$\delay.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
             <file>$PROJ_DIR$\Debug\Obj\motor.o</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\control_timers.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\control_timers.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\eeprom.o</file>
-            <file>C:\ti\TivaWare_C_Series-2.2.0.295\inc\hw_nvic.h</file>
-            <file>C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ewarm\Exe\driverlib.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\control_uart.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\Control_ECU.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\MCAL\systick.o</file>
+            <file>$PROJ_DIR$\uart1.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\MCAL\eeprom.o</file>
+            <file>$PROJ_DIR$\uart1.c</file>
+            <file>$PROJ_DIR$\eeprom.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>C:\ti\TivaWare_C_Series-2.2.0.295\inc\hw_types.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\control_motor.o</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\delay.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
+            <file>$PROJ_DIR$\buzzer.h</file>
+            <file>$PROJ_DIR$\control_main.c</file>
+            <file>$PROJ_DIR$\control_motor.c</file>
+            <file>$PROJ_DIR$\buzzer.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\systick.c</file>
+            <file>$PROJ_DIR$\tm4c123gh6pm.h</file>
+            <file>$PROJ_DIR$\systick.h</file>
+            <file>$PROJ_DIR$\control_uart.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_ewarm.o</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\motor.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\MCAL\uart1.o</file>
+            <file>$PROJ_DIR$\motor.c</file>
+            <file>$TOOLKIT_DIR$\config\linker\TexasInstruments\TM4C123GH6.icf</file>
+            <file>$PROJ_DIR$\startup_ewarm.c</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\APP\main.o</file>
             <file>$PROJ_DIR$\Debug\Obj\control_eeprom.o</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\buzzer.o</file>
-            <file>$PROJ_DIR$\Debug\List\Control_ECU.map</file>
+            <file>$PROJ_DIR$\control_timers.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\eeprom.o</file>
             <file>$PROJ_DIR$\control_eeprom.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\control_main.o</file>
-            <file>$PROJ_DIR$\MCAL\uart1.h</file>
-            <file>$PROJ_DIR$\MCAL\uart1.c</file>
-            <file>$PROJ_DIR$\MCAL\systick.c</file>
-            <file>$PROJ_DIR$\MCAL\eeprom.c</file>
-            <file>$PROJ_DIR$\MCAL\eeprom.h</file>
-            <file>$PROJ_DIR$\MCAL\systick.h</file>
-            <file>$PROJ_DIR$\..\HMI_ECU\adc.h</file>
-            <file>$PROJ_DIR$\..\HMI_ECU\keypad.c</file>
-            <file>$PROJ_DIR$\..\HMI_ECU\uart1.h</file>
-            <file>$PROJ_DIR$\..\HMI_ECU\main.c</file>
-            <file>$PROJ_DIR$\..\HMI_ECU\uart1.c</file>
-            <file>$PROJ_DIR$\APP\main.c</file>
-            <file>$PROJ_DIR$\HAL\motor.h</file>
-            <file>$PROJ_DIR$\CORE\massErase.h</file>
-            <file>$PROJ_DIR$\MACL\systick.h</file>
-            <file>$PROJ_DIR$\HAL\buzzer.c</file>
-            <file>$PROJ_DIR$\MACL\eeprom.c</file>
-            <file>$PROJ_DIR$\MACL\eeprom.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\control_uart.o</file>
+            <file>$PROJ_DIR$\Debug\List\Control_ECU.map</file>
             <file>$PROJ_DIR$\MACL\uart1.c</file>
-            <file>$PROJ_DIR$\HAL\buzzer.h</file>
-            <file>$PROJ_DIR$\MACL\uart1.h</file>
-            <file>$PROJ_DIR$\CORE\tm4c123gh6pm.h</file>
+            <file>C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ewarm\Exe\driverlib.a</file>
+            <file>$PROJ_DIR$\MACL\eeprom.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\control_main.o</file>
             <file>$PROJ_DIR$\MACL\systick.c</file>
-            <file>$PROJ_DIR$\CORE\startup_ewarm.c</file>
-            <file>$PROJ_DIR$\HAL\motor.c</file>
-            <file>$PROJ_DIR$\..\HMI_ECU\Debug\List\HMI_ECU.map</file>
-            <file>$PROJ_DIR$\..\Test\startup_ewarm.c</file>
-            <file>$PROJ_DIR$\..\Test\KeypadTest.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\control_timers.o</file>
             <file>$PROJ_DIR$\..\Test\main.c</file>
-            <file>$PROJ_DIR$\..\HMI_ECU\password.c</file>
             <file>$PROJ_DIR$\Debug\Obj\HAL\buzzer.o</file>
             <file>$PROJ_DIR$\Debug\Obj\HAL\motor.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\CORE\startup_ewarm.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\APP\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\buzzer.o</file>
+            <file>$PROJ_DIR$\CORE\startup_ewarm.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\systick.o</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\HAL\i2c_lcd.c</file>
+            <file>C:\ti\TivaWare_C_Series-2.2.0.295\inc\hw_nvic.h</file>
+            <file>$PROJ_DIR$\MCAL\eeprom.h</file>
+            <file>$PROJ_DIR$\MCAL\systick.c</file>
+            <file>$PROJ_DIR$\MCAL\systick.h</file>
+            <file>$PROJ_DIR$\MCAL\uart1.c</file>
+            <file>$PROJ_DIR$\CORE\massErase.h</file>
+            <file>$PROJ_DIR$\MCAL\uart1.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\eeprom.c</file>
+            <file>$PROJ_DIR$\HAL\buzzer.c</file>
+            <file>$PROJ_DIR$\HAL\buzzer.h</file>
+            <file>$PROJ_DIR$\HAL\motor.c</file>
+            <file>$PROJ_DIR$\HAL\motor.h</file>
+            <file>$PROJ_DIR$\MCAL\eeprom.c</file>
+            <file>$PROJ_DIR$\APP\main.c</file>
+            <file>$PROJ_DIR$\CORE\tm4c123gh6pm.h</file>
+            <file>$PROJ_DIR$\..\Test\Control_ECU\buzzerTest.h</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\HAL\keypad.c</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\HAL\leds.c</file>
+            <file>$PROJ_DIR$\..\Test\Control_ECU\motorTest.h</file>
+            <file>$PROJ_DIR$\..\Test\Control_ECU\eepromTest.h</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\HAL\adc.c</file>
+            <file>$PROJ_DIR$\..\Test\Control_ECU\eeprom.c</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\MCAL\systick.c</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\MCAL\uart1.h</file>
+            <file>$PROJ_DIR$\..\Test\Control_ECU\UART&amp;motor&amp;buzzerTest.h</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\CORE\password.h</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\CORE\password.c</file>
+            <file>$PROJ_DIR$\..\Test\HMI_ECU\Keypad&amp;Lcd&amp;Poten..Test.h</file>
+            <file>$PROJ_DIR$\..\Test\HMI_ECU\leds.c</file>
+            <file>$PROJ_DIR$\..\Test\Control_ECU\motor.c</file>
+            <file>$PROJ_DIR$\..\Test\HMI_ECU\password.c</file>
+            <file>$PROJ_DIR$\..\Test\HMI_ECU\keypad.c</file>
+            <file>$PROJ_DIR$\..\Test\HMI_ECU\PotentiometerTest.h</file>
+            <file>$PROJ_DIR$\..\Test\Control_ECU\buzzer.h</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\MCAL\uart1.c</file>
+            <file>$PROJ_DIR$\..\Test\HMI_ECU\LcdTest.h</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\APP\main.c</file>
+            <file>$PROJ_DIR$\..\Test\Control_ECU\buzzer.c</file>
+            <file>$PROJ_DIR$\..\Test\HMI_ECU\KeypadTest.h</file>
+            <file>$PROJ_DIR$\..\Test\Control_ECU\uart1.c</file>
+            <file>$PROJ_DIR$\..\Test\HMI_ECU\Keypad&amp;LcdTest.h</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\MCAL\systick.h</file>
+            <file>$PROJ_DIR$\..\HMI_ECU\CORE\tm4c123gh6pm.h</file>
+            <file>$PROJ_DIR$\..\Test\Control_ECU\UartTest.h</file>
+            <file>$PROJ_DIR$\..\Test\HMI_ECU\i2c_lcd.c</file>
+            <file>$PROJ_DIR$\..\Test\HMI_ECU\adc.c</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\eeprom.c</name>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 4 30 16 22 65 18 10 31 25 24 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 5 44</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\Control_ECU.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 44</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 34 11 36 29 14 46 37 52 53 8 6 32</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\uart1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 1</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 4 30 16 22 65 24 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\delay.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 4 30 16 22 65 2 24</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\control_main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\control_motor.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\buzzer.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 54</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 18 24</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\systick.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 56</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 4 30 16 22 65 25 24</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\control_uart.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
                     <file> 43</file>
                 </tool>
             </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 7 16</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 22</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 14 7 5 8 16 10</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\motor.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 39</file>
+                    <file> 3</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 5 16</file>
+                    <file> 31 24</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\systick.c</name>
+            <name>$PROJ_DIR$\startup_ewarm.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 28</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 4 30 16 22 65 58 12 7</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\control_timers.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 50</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\control_eeprom.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 38</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\MACL\uart1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\MACL\eeprom.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\MACL\systick.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\CORE\startup_ewarm.c</name>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 4 30 16 22 65 58 12</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\MCAL\systick.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 4 30 16 22 65 73 61</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\MCAL\uart1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 32</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 4 30 16 22 65 73 64</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\eeprom.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 39 4 30 16 22 65 10 24</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\HAL\buzzer.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -150,166 +377,22 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 8 16</file>
+                    <file> 73 68</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\uart1.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 36</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 16 10</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\control_uart.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 46</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Debug\Exe\Control_ECU.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 50</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 32 25 11 27 31 45 87 84 85 19 21 18</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\startup_ewarm.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 26</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 44 30 10</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\buzzer.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 49</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 14 16</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 13 50</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\control_main.c</name>
+            <name>$PROJ_DIR$\HAL\motor.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
                     <file> 53</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\control_motor.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 28</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\delay.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 38</file>
-                </tool>
-            </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 37 16</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\control_timers.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 42</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\control_eeprom.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 47</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\MCAL\uart1.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 18</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 75 54</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\MCAL\systick.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 21</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 75 59</file>
+                    <file> 73 70</file>
                 </tool>
             </inputs>
         </file>
@@ -318,13 +401,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 19</file>
+                    <file> 8</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 75 58</file>
+                    <file> 39 4 30 16 22 65 73 59</file>
                 </tool>
             </inputs>
         </file>
@@ -333,113 +416,47 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 87</file>
+                    <file> 37</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 75 73 66 58 59 54</file>
+                    <file> 39 4 30 16 22 65 73 68 70 59 61 64</file>
                 </tool>
             </inputs>
         </file>
-        <file>
-            <name>$PROJ_DIR$\HAL\buzzer.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 84</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 75 73</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\MACL\eeprom.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 19</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
+        <forcedrebuild>
             <name>$PROJ_DIR$\MACL\uart1.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 18</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\MACL\eeprom.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
             <name>$PROJ_DIR$\MACL\systick.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 21</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
             <name>$PROJ_DIR$\CORE\startup_ewarm.c</name>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 48 40 35 34 29 0 44 30</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\HAL\buzzer.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
             <name>$PROJ_DIR$\HAL\motor.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 85</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 75 66</file>
-                </tool>
-            </inputs>
-        </file>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>$PROJ_DIR$\APP\main.c</name>
+            <tool>ICCARM</tool>
+        </forcedrebuild>
         <forcedrebuild>
             <name>[MULTI_TOOL]</name>
             <tool>ILINK</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\APP\main.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\HAL\buzzer.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\MACL\eeprom.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\MACL\uart1.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\MACL\systick.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\CORE\startup_ewarm.c</name>
-            <tool>ICCARM</tool>
-        </forcedrebuild>
-        <forcedrebuild>
-            <name>$PROJ_DIR$\HAL\motor.c</name>
-            <tool>ICCARM</tool>
         </forcedrebuild>
         <forcedrebuild>
             <name>[REBUILD_ALL]</name>

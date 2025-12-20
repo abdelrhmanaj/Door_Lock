@@ -1,13 +1,6 @@
-
-
 #include "eeprom.h"
 #include "../CORE/tm4c123gh6pm.h"
 
-/*
- * EEPROM_WaitDone
- * Waits for EEPROM operation to complete by polling EEDONE register.
- * Returns: EEPROM_SUCCESS if done, EEPROM_TIMEOUT if timeout occurs
- */
 static uint8_t EEPROM_WaitDone(void)
 {
     uint32_t timeout = 1000000;  /* Timeout counter */
@@ -33,14 +26,6 @@ static uint8_t EEPROM_WaitDone(void)
     return EEPROM_SUCCESS;
 }
 
-/******************************************************************************
- *                          Public Functions                                   *
- ******************************************************************************/
-
-/*
- * EEPROM_Init
- * Initializes the EEPROM module.
- */
 uint8_t EEPROM_Init(void)
 {
     uint32_t timeout = 1000000;
@@ -87,10 +72,6 @@ uint8_t EEPROM_Init(void)
     return EEPROM_SUCCESS;
 }
 
-/*
- * EEPROM_WriteWord
- * Writes a 32-bit word to EEPROM.
- */
 uint8_t EEPROM_WriteWord(uint32_t block, uint32_t offset, uint32_t data)
 {
     /* Validate parameters */

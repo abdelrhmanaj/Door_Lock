@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <LMIFTDIDriver>
-        <LMIFTDIserialNo>0E23BBB5</LMIFTDIserialNo>
+        <LMIFTDIserialNo>0E20835F</LMIFTDIserialNo>
         <LMIFTDIfoundProbes />
     </LMIFTDIDriver>
     <Exceptions>
@@ -24,7 +24,7 @@
         <StopOnThrow>_ 0</StopOnThrow>
     </Exceptions>
     <DebugChecksum>
-        <Checksum>3094548941</Checksum>
+        <Checksum>2445115077</Checksum>
     </DebugChecksum>
     <Disassembly>
         <InstrCount>0</InstrCount>

@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.10.1.308/W64 for ARM                  17/Dec/2025  23:36:02
+# IAR ELF Linker V9.10.1.308/W64 for ARM                  20/Dec/2025  22:08:41
 # Copyright 2007-2021 IAR Systems AB.
 #
 #    Output file  =
@@ -31,7 +31,8 @@
 #        "C:\Program Files\IAR Systems\Embedded Workbench
 #        9.0\arm\config\linker\TexasInstruments\TM4C123GH6.icf" --semihosting
 #        C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ewarm\Exe\driverlib.a
-#        --entry __iar_program_start --vfe --text_out locale)
+#        --entry __iar_program_start --vfe --enable_stack_usage --text_out
+#        locale)
 #
 ###############################################################################
 
@@ -128,6 +129,35 @@ Copy (__iar_copy_init3)
     1 destination range, total size 0x2:
           0x2000'0000   0x2
 
+
+*******************************************************************************
+*** STACK USAGE
+***
+
+  Call Graph Root Category  Max Use  Total Use
+  ------------------------  -------  ---------
+  interrupt                      0          0
+  Program entry                 80         80
+
+
+Program entry
+  "__iar_program_start": 0x7e9
+
+  Maximum call chain                               80  bytes
+
+    "__iar_program_start"                           0
+    "__cmain"                                       0
+    "main"                                         24
+    "check_password" in main.o [1]                 16
+    "EEPROM_ReadBuffer"                            40
+    "EEPROM_ReadWord"                               0
+
+interrupt
+  "__default_handler" in vectortrap_M.o [6]: 0x79d
+
+  Maximum call chain                                0  bytes
+
+    "__default_handler" in vectortrap_M.o [6]       0
 
 
 *******************************************************************************

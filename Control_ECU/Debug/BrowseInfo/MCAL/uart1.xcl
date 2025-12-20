@@ -1,4 +1,4 @@
-"D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\MACL\uart1.c"
+"D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\MCAL\uart1.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
@@ -9,7 +9,7 @@ D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.p
 -o
 D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\Debug\BrowseInfo\MCAL\uart1.pbi
 -I
-D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\MACL
+D:\Fall2025\Intro ES\project\Door_Lock\Control_ECU\MCAL
 -I
 C:\ti\TivaWare_C_Series-2.2.0.295\inc
 -I

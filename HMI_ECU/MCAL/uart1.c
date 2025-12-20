@@ -2,14 +2,6 @@
 #include "../CORE/tm4c123gh6pm.h"
 #include <stdint.h>
 
-
-/* =====================================================
- * UART1 Init
- * PB0 -> RX
- * PB1 -> TX
- * Baud = 9600 @ 16 MHz
- * 8N1 – FIFO ENABLED
- * ===================================================== */
 void UART1_init(void)
 {
     /* Enable clocks */

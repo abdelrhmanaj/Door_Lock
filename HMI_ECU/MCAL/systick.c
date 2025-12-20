@@ -38,8 +38,4 @@ void DelayMs(uint32_t ms)
     }
 }
 
-/* SysTick Interrupt Handler */
-void SystickHandler(void)
-{
-    msTicks++;
-}
+
