@@ -73,3 +73,33 @@ Password validation
 Door operation
 
 Lockout handling
+##🧪 Testing Strategy
+###✔ Unit Testing
+
+Individual drivers tested in isolation
+
+Examples:
+
+Motor direction control
+
+EEPROM read/write
+
+UART TX/RX
+
+###✔ Integration Testing
+
+UART ↔ EEPROM
+
+UART ↔ Motor
+
+UART ↔ Buzzer
+
+###✔ System Testing
+
+First-boot password creation
+
+Correct / incorrect login
+
+3-attempt lockout behavior
+
+Auto-lock timing accuracy
