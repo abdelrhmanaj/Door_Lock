@@ -90,8 +90,11 @@ static void open_door(void)
 static void change_password(void)
 {
     char old_pw[PASSWORD_LENGTH + 1];
+    uint8_t attempts = 0;
 
-    lcd_clear();
+    while (attempts < 3)
+    {
+     lcd_clear();
     display_message("Old Password:", 0, 0);
     clear_line(1);
     get_password_input_line(old_pw);
@@ -100,39 +103,50 @@ static void change_password(void)
     DelayMs(100);
     for (uint8_t i = 0; i < PASSWORD_LENGTH; i++)
         UART1_sendByte(old_pw[i]);
-    
-      DelayMs(200);
-    if (UART1_receiveByte() != RESP_OK)
-    {
+      display_message("Checking", 0, 0);
+      DelayMs(2000);
+     
+
+        if (UART1_receiveByte() == RESP_OK)
+        {
+           char new_pw[PASSWORD_LENGTH + 1];
+            while (!setup_password(new_pw));
+
+            UART1_sendByte(CMD_SAVE_PW);
+            DelayMs(100);
+            for (uint8_t i = 0; i < PASSWORD_LENGTH; i++)
+              UART1_sendByte(new_pw[i]);
+            DelayMs(500);
+           if (UART1_receiveByte() == RESP_OK)
+           {
+            lcd_clear();
+            display_message("Password Updated", 0, 0);
+            led_green_flash(2);
+           }
+          else
+          {
+           lcd_clear();
+           display_message("Save Failed", 0, 0);
+          led_red_flash(3);
+          }
+         DelayMs(1500);
+         return;
+        }
+
+        attempts++;
         lcd_clear();
         display_message("Wrong Password", 0, 0);
-        led_red_flash(2);
-        DelayMs(1500);
-        return;
+        led_red_flash(1);
+        DelayMs(800);
     }
+    UART1_sendByte(CMD_BUZZER);
+    DelayMs(1000);
+    lcd_clear();
+    display_message("LOCKED!", 0, 0);
+    led_red_flash(5);
+    DelayMs(500);
 
-    char new_pw[PASSWORD_LENGTH + 1];
-    while (!setup_password(new_pw));
-
-    UART1_sendByte(CMD_SAVE_PW);
-    DelayMs(100);
-    for (uint8_t i = 0; i < PASSWORD_LENGTH; i++)
-        UART1_sendByte(new_pw[i]);
-       DelayMs(500);
-    if (UART1_receiveByte() == RESP_OK)
-    {
-        lcd_clear();
-        display_message("Password Updated", 0, 0);
-        led_green_flash(2);
-    }
-    else
-    {
-        lcd_clear();
-        display_message("Save Failed", 0, 0);
-        led_red_flash(3);
-    }
-
-    DelayMs(1500);
+    
 }
 
 /* =====================================================
