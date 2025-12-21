@@ -33,4 +33,43 @@ Resource usage analysis (ROM, RAM, Stack)
 
 Coding-standard compliance documentation
 
+## 🧱 Software Layering Model
+### 1️⃣ MCAL (Microcontroller Abstraction Layer)
 
+Direct register access
+
+Hardware-specific drivers
+
+Examples:
+
+uart1.c
+
+systick.c
+
+eeprom.c
+
+### 2️⃣ HAL (Hardware Abstraction Layer)
+
+Device-oriented drivers
+
+Independent of application logic
+
+Examples:
+
+Motor, Buzzer
+
+LCD, Keypad, LEDs, ADC
+
+### 3️⃣ Application Layer (APP)
+
+Business logic
+
+System flow and state control
+
+Examples:
+
+Password validation
+
+Door operation
+
+Lockout handling
