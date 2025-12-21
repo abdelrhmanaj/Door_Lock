@@ -1,5 +1,5 @@
 # 🔐 Door Lock System – Dual ECU Embedded Project
-📌 Project Overview
+## 📌 Project Overview
 
 This project implements a secure door lock system using two TM4C123GH6PM (Tiva-C) microcontrollers:
 
@@ -11,7 +11,7 @@ Handles security logic, EEPROM storage, motor control, and buzzer alarms.
 
 The two ECUs communicate via UART using a simple command-based protocol.
 
-🧩 System Features
+## 🧩 System Features
 
 First-time password setup
 
@@ -33,12 +33,4 @@ Resource usage analysis (ROM, RAM, Stack)
 
 Coding-standard compliance documentation
 
-🏗️ System Architecture
-+------------------+        UART        +------------------+
-|     HMI_ECU      | <----------------> |   Control_ECU    |
-|------------------|                    |------------------|
-| Keypad           |                    | EEPROM           |
-| LCD (I2C)        |                    | Motor Driver     |
-| LEDs             |                    | Buzzer           |
-| ADC (Pot)        |                    | Security Logic   |
-+------------------+                    +------------------+
+
