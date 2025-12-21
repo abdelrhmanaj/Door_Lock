@@ -73,8 +73,9 @@ Password validation
 Door operation
 
 Lockout handling
-##🧪 Testing Strategy
-###✔ Unit Testing
+
+## 🧪 Testing Strategy
+### ✔ Unit Testing
 
 Individual drivers tested in isolation
 
@@ -86,7 +87,7 @@ EEPROM read/write
 
 UART TX/RX
 
-###✔ Integration Testing
+### ✔ Integration Testing
 
 UART ↔ EEPROM
 
@@ -94,7 +95,7 @@ UART ↔ Motor
 
 UART ↔ Buzzer
 
-###✔ System Testing
+### ✔ System Testing
 
 First-boot password creation
 
