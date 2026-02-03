@@ -1,4 +1,5 @@
 # 🔐 Door Lock System – Dual ECU Embedded Project
+## Video Link: https://drive.google.com/file/d/1K1BoKKxZdrg9O2ZNQbJ_Yw8FRdLq5nKG/view?usp=sharing
 ## 📌 Project Overview
 
 This project implements a secure door lock system using two TM4C123GH6PM (Tiva-C) microcontrollers:
